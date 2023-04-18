@@ -1,6 +1,8 @@
-# walletpassphrasechange
 
-`walletpassphrasechange "oldpassphrase" "newpassphrase"`
+    ---
+    sidebar_position: 137
+    ---
+    # walletpassphrasechange
 
 Changes the wallet passphrase from ‘oldpassphrase’ to ‘newpassphrase’.
 
@@ -18,10 +20,8 @@ The new passphrase
 
 ## Result
 
-null    (json null)
-
 ## Examples
 
-bitcoin-cli walletpassphrasechange "old one" "new one"
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "walletpassphrasechange", "params": ["old one", "new one"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "walletpassphrasechange", "params": ["old one", "new one"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

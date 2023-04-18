@@ -1,6 +1,8 @@
-# generateblock
 
-`generateblock "output" ["rawtx/txid",...]`
+    ---
+    sidebar_position: 33
+    ---
+    # generateblock
 
 Mine a block with a set of ordered transactions immediately to a specified address or descriptor (before the RPC call returns)
 
@@ -18,19 +20,12 @@ An array of hex strings which are either txids or raw transactions.
 
 Txids must reference transactions currently in the mempool. All transactions must be valid and in valid order, otherwise the block will be rejected.
 
-[
-  "rawtx/txid",    (string)
-  ...
-]
-
 ## Result
-
-{                    (json object)
-  "hash" : "hex"     (string) hash of generated block
-}
 
 ## Examples
 
 Generate a block to myaddress, with txs rawtx and mempool\_txid:
 
-bitcoin-cli generateblock "myaddress" '["rawtx", "mempool_txid"]'
+`bitcoin-cli generateblock "myaddress" '["rawtx", "mempool_txid"]'
+
+`

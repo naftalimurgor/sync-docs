@@ -1,4 +1,8 @@
-# setnetworkactive
+
+    ---
+    sidebar_position: 54
+    ---
+    # setnetworkactive
 
 `setnetworkactive state`
 

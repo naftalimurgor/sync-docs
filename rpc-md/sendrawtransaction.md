@@ -1,6 +1,8 @@
-# sendrawtransaction
 
-`sendrawtransaction "hexstring" ( maxfeerate )`
+    ---
+    sidebar_position: 68
+    ---
+    # sendrawtransaction
 
 Submit a raw transaction (serialized, hex-encoded) to local node and network.
 
@@ -32,16 +34,12 @@ Set to 0 to accept any fee rate.
 
 Create a transaction:
 
-bitcoin-cli createrawtransaction "[{\"txid\" : \"mytxid\",\"vout\":0}]" "{\"myaddress\":0.01}"
-
 Sign the transaction, and get back the hex:
-
-bitcoin-cli signrawtransactionwithwallet "myhex"
 
 Send the transaction (signed hex):
 
-bitcoin-cli sendrawtransaction "signedhex"
-
 As a JSON-RPC call:
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "sendrawtransaction", "params": ["signedhex"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "sendrawtransaction", "params": ["signedhex"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+
+`

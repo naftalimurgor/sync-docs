@@ -1,6 +1,8 @@
-# setban
 
-`setban "subnet" "command" ( bantime absolute )`
+    ---
+    sidebar_position: 53
+    ---
+    # setban
 
 Attempts to add or remove an IP/Subnet from the banned list.
 
@@ -30,12 +32,8 @@ If set, the bantime must be an absolute timestamp expressed in UNIX epoch time
 
 ## Result
 
-null    (json null)
-
 ## Examples
 
-bitcoin-cli setban "192.168.0.6" "add" 86400
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "setban", "params": ["192.168.0.6", "add", 86400]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-bitcoin-cli setban "192.168.0.0/24" "add"
-
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "setban", "params": ["192.168.0.6", "add", 86400]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

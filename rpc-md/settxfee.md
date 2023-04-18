@@ -1,6 +1,8 @@
-# settxfee
 
-`settxfee amount`
+    ---
+    sidebar_position: 128
+    ---
+    # settxfee
 
 Set the transaction fee per kB for this wallet. Overrides the global -paytxfee command line parameter.
 
@@ -20,6 +22,6 @@ The transaction fee in BTC/kvB
 
 ## Examples
 
-bitcoin-cli settxfee 0.00001
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "settxfee", "params": [0.00001]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "settxfee", "params": [0.00001]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

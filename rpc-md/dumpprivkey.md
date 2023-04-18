@@ -1,6 +1,8 @@
-# dumpprivkey
 
-`dumpprivkey "address"`
+    ---
+    sidebar_position: 86
+    ---
+    # dumpprivkey
 
 Reveals the private key corresponding to ‘address’.
 
@@ -20,8 +22,6 @@ The bitcoin address for the private key
 
 ## Examples
 
-bitcoin-cli dumpprivkey "myaddress"
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "dumpprivkey", "params": ["myaddress"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-bitcoin-cli importprivkey "mykey"
-
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "dumpprivkey", "params": ["myaddress"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

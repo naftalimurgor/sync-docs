@@ -1,6 +1,8 @@
-# gettxoutproof
 
-`gettxoutproof ["txid",...] ( "blockhash" )`
+    ---
+    sidebar_position: 19
+    ---
+    # gettxoutproof
 
 Returns a hex-encoded proof that “txid” was included in a block.
 
@@ -12,10 +14,12 @@ NOTE: By default this function only works sometimes. This is when there is an un
 
 The txids to filter
 
-[
+`[
   "txid",    (string) A transaction hash
   ...
 ]
+
+`
 
 ## Argument #2 - blockhash
 

@@ -1,6 +1,8 @@
-# finalizepsbt
 
-`finalizepsbt "psbt" ( extract )`
+    ---
+    sidebar_position: 64
+    ---
+    # finalizepsbt
 
 Finalize the inputs of a PSBT. If the transaction is fully signed, it will produce a network serialized transaction which can be broadcast with sendrawtransaction. Otherwise a PSBT will be created which has the final\_scriptSig and final\_scriptWitness fields filled for inputs that are complete.
 
@@ -22,12 +24,8 @@ extract and return the complete transaction in normal network serialization inst
 
 ## Result
 
-{                             (json object)
-  "psbt" : "str",             (string) The base64-encoded partially signed transaction if not extracted
-  "hex" : "hex",              (string) The hex-encoded network transaction if extracted
-  "complete" : true|false     (boolean) If the transaction has a complete set of signatures
-}
-
 ## Examples
 
-bitcoin-cli finalizepsbt "psbt"
+`bitcoin-cli finalizepsbt "psbt"
+
+`

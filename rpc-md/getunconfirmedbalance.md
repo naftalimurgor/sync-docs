@@ -1,4 +1,8 @@
-# getunconfirmedbalance
+
+    ---
+    sidebar_position: 98
+    ---
+    # getunconfirmedbalance
 
 `getunconfirmedbalance`
 

@@ -1,6 +1,8 @@
-# generatetoaddress
 
-`generatetoaddress nblocks "address" ( maxtries )`
+    ---
+    sidebar_position: 34
+    ---
+    # generatetoaddress
 
 Mine blocks immediately to a specified address (before the RPC call returns)
 
@@ -24,17 +26,12 @@ How many iterations to try.
 
 ## Result
 
-[           (json array) hashes of blocks generated
-  "hex",    (string) blockhash
-  ...
-]
-
 ## Examples
 
 Generate 11 blocks to myaddress:
 
-bitcoin-cli generatetoaddress 11 "myaddress"
-
 If you are using the Bitcoin Core wallet, you can get a new address to send the newly generated bitcoin to with::
 
-bitcoin-cli getnewaddress
+`bitcoin-cli getnewaddress
+
+`

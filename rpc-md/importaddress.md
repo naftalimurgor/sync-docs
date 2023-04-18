@@ -1,6 +1,8 @@
-# importaddress
 
-`importaddress "address" ( "label" rescan p2sh )`
+    ---
+    sidebar_position: 100
+    ---
+    # importaddress
 
 Adds an address or script (in hex) that can be watched as if it were in your wallet but cannot be used to spend. Requires a new wallet backup.
 
@@ -40,18 +42,14 @@ Add the P2SH version of the script as well
 
 ## Result
 
-null    (json null)
-
 ## Examples
 
 Import an address with rescan:
 
-bitcoin-cli importaddress "myaddress"
-
 Import using a label without rescan:
-
-bitcoin-cli importaddress "myaddress" "testing" false
 
 As a JSON-RPC call:
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "importaddress", "params": ["myaddress", "testing", false]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "importaddress", "params": ["myaddress", "testing", false]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+
+`

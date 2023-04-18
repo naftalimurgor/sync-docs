@@ -1,6 +1,8 @@
-# scantxoutset
 
-`scantxoutset "action" ( [scanobjects,...] )`
+    ---
+    sidebar_position: 24
+    ---
+    # scantxoutset
 
 EXPERIMENTAL warning: this call may be removed or changed in future releases.
 
@@ -32,18 +34,9 @@ Array of scan objects. Required for “start” action
 
 Every scan object is either a string descriptor or an object:
 
-[
-  "descriptor",             (string) An output descriptor
-  {                         (json object) An object with output descriptor and metadata
-    "desc": "str",          (string, required) An output descriptor
-    "range": n or [n,n],    (numeric or array, optional, default=1000) The range of HD chain indexes to explore (either end or [begin,end])
-  },
-  ...
-]
-
 ## Result
 
-{                                (json object)
+`{                                (json object)
   "success" : true|false,        (boolean) Whether the scan was completed
   "txouts" : n,                  (numeric) The number of unspent transaction outputs scanned
   "height" : n,                  (numeric) The current block height (index)
@@ -61,3 +54,5 @@ Every scan object is either a string descriptor or an object:
   ],
   "total_amount" : n             (numeric) The total amount of all found unspent outputs in BTC
 }
+
+`

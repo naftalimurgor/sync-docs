@@ -1,6 +1,8 @@
-# verifychain
 
-`verifychain ( checklevel nblocks )`
+    ---
+    sidebar_position: 25
+    ---
+    # verifychain
 
 Verifies blockchain database.
 
@@ -31,6 +33,6 @@ The number of blocks to check.
 
 ## Examples
 
-bitcoin-cli verifychain
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "verifychain", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "verifychain", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

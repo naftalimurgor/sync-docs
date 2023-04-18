@@ -1,6 +1,8 @@
-# walletprocesspsbt
 
-`walletprocesspsbt "psbt" ( sign "sighashtype" bip32derivs )`
+    ---
+    sidebar_position: 138
+    ---
+    # walletprocesspsbt
 
 Update a PSBT with input information from our wallet and then sign inputs that we can sign for.
 
@@ -34,11 +36,8 @@ Include BIP 32 derivation paths for public keys if we know them
 
 ## Result
 
-{                             (json object)
-  "psbt" : "str",             (string) The base64-encoded partially signed transaction
-  "complete" : true|false     (boolean) If the transaction has a complete set of signatures
-}
-
 ## Examples
 
-bitcoin-cli walletprocesspsbt "psbt"
+`bitcoin-cli walletprocesspsbt "psbt"
+
+`

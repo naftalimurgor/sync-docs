@@ -1,6 +1,8 @@
-# submitblock
 
-`submitblock "hexdata" ( "dummy" )`
+    ---
+    sidebar_position: 40
+    ---
+    # submitblock
 
 Attempts to submit new block to network.
 
@@ -26,6 +28,6 @@ dummy value, for compatibility with BIP22\. This value is ignored.
 
 ## Examples
 
-bitcoin-cli submitblock "mydata"
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "submitblock", "params": ["mydata"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "submitblock", "params": ["mydata"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

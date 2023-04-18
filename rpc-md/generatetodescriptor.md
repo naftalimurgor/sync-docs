@@ -1,6 +1,8 @@
-# generatetodescriptor
 
-`generatetodescriptor num_blocks "descriptor" ( maxtries )`
+    ---
+    sidebar_position: 35
+    ---
+    # generatetodescriptor
 
 Mine blocks immediately to a specified descriptor (before the RPC call returns)
 
@@ -24,13 +26,10 @@ How many iterations to try.
 
 ## Result
 
-[           (json array) hashes of blocks generated
-  "hex",    (string) blockhash
-  ...
-]
-
 ## Examples
 
 Generate 11 blocks to mydesc:
 
-bitcoin-cli generatetodescriptor 11 "mydesc"
+`bitcoin-cli generatetodescriptor 11 "mydesc"
+
+`

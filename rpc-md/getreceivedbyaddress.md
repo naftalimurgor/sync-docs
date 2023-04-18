@@ -1,6 +1,8 @@
-# getreceivedbyaddress
 
-`getreceivedbyaddress "address" ( minconf )`
+    ---
+    sidebar_position: 95
+    ---
+    # getreceivedbyaddress
 
 Returns the total amount received by the given address in transactions with at least minconf confirmations.
 
@@ -26,16 +28,12 @@ Only include transactions confirmed at least this many times.
 
 The amount from transactions with at least 1 confirmation:
 
-bitcoin-cli getreceivedbyaddress "bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl"
-
 The amount including unconfirmed transactions, zero confirmations:
-
-bitcoin-cli getreceivedbyaddress "bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" 0
 
 The amount with at least 6 confirmations:
 
-bitcoin-cli getreceivedbyaddress "bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" 6
-
 As a JSON-RPC call:
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getreceivedbyaddress", "params": ["bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl", 6]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getreceivedbyaddress", "params": ["bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl", 6]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+
+`

@@ -1,6 +1,8 @@
-# getrawchangeaddress
 
-`getrawchangeaddress ( "address_type" )`
+    ---
+    sidebar_position: 94
+    ---
+    # getrawchangeaddress
 
 Returns a new Bitcoin address, for receiving change.
 
@@ -20,6 +22,6 @@ The address type to use. Options are “legacy”, “p2sh-segwit”, and “bec
 
 ## Examples
 
-bitcoin-cli getrawchangeaddress
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getrawchangeaddress", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getrawchangeaddress", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

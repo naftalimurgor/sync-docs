@@ -1,6 +1,8 @@
-# getmemoryinfo
 
-`getmemoryinfo ( "mode" )`
+    ---
+    sidebar_position: 27
+    ---
+    # getmemoryinfo
 
 Returns an object containing information about memory usage.
 
@@ -15,17 +17,6 @@ determines what kind of information is returned.
 
 ## Result (mode “stats”)
 
-{                         (json object)
-  "locked" : {            (json object) Information about locked memory manager
-    "used" : n,           (numeric) Number of bytes used
-    "free" : n,           (numeric) Number of bytes available in current arenas
-    "total" : n,          (numeric) Total number of bytes managed
-    "locked" : n,         (numeric) Amount of bytes that succeeded locking. If this number is smaller than total, locking pages failed at some point and key data could be swapped to disk.
-    "chunks_used" : n,    (numeric) Number allocated chunks
-    "chunks_free" : n     (numeric) Number unused chunks
-  }
-}
-
 ## Result (mode “mallocinfo”)
 
 | Name | Type   | Description             |
@@ -34,6 +25,6 @@ determines what kind of information is returned.
 
 ## Examples
 
-bitcoin-cli getmemoryinfo
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getmemoryinfo", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getmemoryinfo", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

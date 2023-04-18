@@ -1,6 +1,8 @@
-# createwallet
 
-`createwallet "wallet_name" ( disable_private_keys blank "passphrase" avoid_reuse descriptors load_on_startup )`
+    ---
+    sidebar_position: 85
+    ---
+    # createwallet
 
 Creates and loads a new wallet.
 
@@ -48,13 +50,8 @@ Save wallet name to persistent settings and load on startup. True to add wallet 
 
 ## Result
 
-{                       (json object)
-  "name" : "str",       (string) The wallet name if created successfully. If the wallet was created using a full path, the wallet_name will be the full path.
-  "warning" : "str"     (string) Warning message if wallet was not loaded cleanly.
-}
-
 ## Examples
 
-bitcoin-cli createwallet "testwallet"
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "createwallet", "params": ["testwallet"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "createwallet", "params": ["testwallet"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

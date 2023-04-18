@@ -1,6 +1,8 @@
-# submitheader
 
-`submitheader "hexdata"`
+    ---
+    sidebar_position: 41
+    ---
+    # submitheader
 
 Decode the given hexdata as a header and submit it as a candidate chain tip if valid.
 
@@ -20,6 +22,6 @@ the hex-encoded block header data
 
 ## Examples
 
-bitcoin-cli submitheader "aabbcc"
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "submitheader", "params": ["aabbcc"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "submitheader", "params": ["aabbcc"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

@@ -1,6 +1,8 @@
-# converttopsbt
 
-`converttopsbt "hexstring" ( permitsigdata iswitness )`
+    ---
+    sidebar_position: 58
+    ---
+    # converttopsbt
 
 Converts a network serialized transaction to a PSBT. This should be used only with createrawtransaction and fundrawtransaction createpsbt and walletcreatefundedpsbt should be used for new applications.
 
@@ -36,8 +38,8 @@ If iswitness is not present, heuristic tests will be used in decoding. If true, 
 
 Create a transaction:
 
-bitcoin-cli createrawtransaction "[{\"txid\":\"myid\",\"vout\":0}]" "[{\"data\":\"00010203\"}]"
-
 Convert the transaction to a PSBT:
 
-bitcoin-cli converttopsbt "rawtransaction"
+`bitcoin-cli converttopsbt "rawtransaction"
+
+`

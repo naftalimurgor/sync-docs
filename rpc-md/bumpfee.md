@@ -1,6 +1,8 @@
-# bumpfee
 
-`bumpfee "txid" ( options )`
+    ---
+    sidebar_position: 84
+    ---
+    # bumpfee
 
 Bumps the fee of an opt-in-RBF transaction T, replacing it with a new transaction B.
 
@@ -34,43 +36,12 @@ The txid to be bumped
 
 **Type:** json object, optional
 
-{
-  "conf_target": n,          (numeric, optional, default=wallet -txconfirmtarget) Confirmation target in blocks
-
-  "fee_rate": amount,        (numeric or string, optional, default=not set, fall back to wallet fee estimation)
-                             Specify a fee rate in sat/vB instead of relying on the built-in fee estimator.
-                             Must be at least 1.000 sat/vB higher than the current transaction fee rate.
-                             WARNING: before version 0.21, fee_rate was in BTC/kvB. As of 0.21, fee_rate is in sat/vB.
-
-  "replaceable": bool,       (boolean, optional, default=true) Whether the new transaction should still be
-                             marked bip-125 replaceable. If true, the sequence numbers in the transaction will
-                             be left unchanged from the original. If false, any input sequence numbers in the
-                             original transaction that were less than 0xfffffffe will be increased to 0xfffffffe
-                             so the new transaction will not be explicitly bip-125 replaceable (though it may
-                             still be replaceable in practice, for example if it has unconfirmed ancestors which
-                             are replaceable).
-
-  "estimate_mode": "str",    (string, optional, default=unset) The fee estimate mode, must be one of (case insensitive):
-                             "unset"
-                             "economical"
-                             "conservative"
-}
-
 ## Result
-
-{                    (json object)
-  "psbt" : "str",    (string) The base64-encoded unsigned PSBT of the new transaction. Only returned when wallet private keys are disabled. (DEPRECATED)
-  "txid" : "hex",    (string) The id of the new transaction. Only returned when wallet private keys are enabled.
-  "origfee" : n,     (numeric) The fee of the replaced transaction.
-  "fee" : n,         (numeric) The fee of the new transaction.
-  "errors" : [       (json array) Errors encountered during processing (may be empty).
-    "str",           (string)
-    ...
-  ]
-}
 
 ## Examples
 
 Bump the fee, get the new transaction’stxid:
 
-bitcoin-cli bumpfee <txid>
+`bitcoin-cli bumpfee <txid>
+
+`

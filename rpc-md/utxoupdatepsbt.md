@@ -1,6 +1,8 @@
-# utxoupdatepsbt
 
-`utxoupdatepsbt "psbt" ( ["",{"desc":"str","range":n or [n,n]},...] )`
+    ---
+    sidebar_position: 71
+    ---
+    # utxoupdatepsbt
 
 Updates all segwit inputs and outputs in a PSBT with data from output descriptors, the UTXO set or the mempool.
 
@@ -16,15 +18,6 @@ A base64 string of a PSBT
 
 An array of either strings or objects
 
-[
-  "",                       (string) An output descriptor
-  {                         (json object) An object with an output descriptor and extra information
-    "desc": "str",          (string, required) An output descriptor
-    "range": n or [n,n],    (numeric or array, optional, default=1000) Up to what index HD chains should be explored (either end or [begin,end])
-  },
-  ...
-]
-
 ## Result
 
 | Name | Type   | Description                                                         |
@@ -33,4 +26,6 @@ An array of either strings or objects
 
 ## Examples
 
-bitcoin-cli utxoupdatepsbt "psbt"
+`bitcoin-cli utxoupdatepsbt "psbt"
+
+`

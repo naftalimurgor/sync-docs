@@ -1,4 +1,8 @@
-# help
+
+    ---
+    sidebar_position: 29
+    ---
+    # help
 
 `help ( "command" )`
 

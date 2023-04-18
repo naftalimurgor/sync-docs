@@ -1,6 +1,8 @@
-# getblockcount
 
-`getblockcount`
+    ---
+    sidebar_position: 5
+    ---
+    # getblockcount
 
 Returns the height of the most-work fully-validated chain.
 
@@ -14,6 +16,6 @@ The genesis block has height 0.
 
 ## Examples
 
-bitcoin-cli getblockcount
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getblockcount", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getblockcount", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

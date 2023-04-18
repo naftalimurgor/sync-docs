@@ -1,6 +1,8 @@
-# getnetworkhashps
 
-`getnetworkhashps ( nblocks height )`
+    ---
+    sidebar_position: 38
+    ---
+    # getnetworkhashps
 
 Returns the estimated network hashes per second based on the last n blocks.
 
@@ -28,6 +30,6 @@ To estimate at the time of the given height.
 
 ## Examples
 
-bitcoin-cli getnetworkhashps
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getnetworkhashps", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getnetworkhashps", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

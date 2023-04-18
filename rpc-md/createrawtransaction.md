@@ -1,6 +1,8 @@
-# createrawtransaction
 
-`createrawtransaction [{"txid":"hex","vout":n,"sequence":n},...] [{"address":amount},{"data":"hex"},...] ( locktime replaceable )`
+    ---
+    sidebar_position: 60
+    ---
+    # createrawtransaction
 
 Create a transaction spending the given inputs and creating new outputs.
 
@@ -16,15 +18,6 @@ Note that the transaction’s inputs are not signed, and it is not stored in the
 
 The inputs
 
-[
-  {                       (json object)
-    "txid": "hex",        (string, required) The transaction id
-    "vout": n,            (numeric, required) The output number
-    "sequence": n,        (numeric, optional, default=depends on the value of the 'replaceable' and 'locktime' arguments) The sequence number
-  },
-  ...
-]
-
 ## Argument #2 - outputs
 
 **Type:** json array, required
@@ -32,16 +25,6 @@ The inputs
 The outputs (key-value pairs), where none of the keys are duplicated.
 
 That is, each address can only appear once and there can only be one ‘data’ object. For compatibility reasons, a dictionary, which holds the key-value pairs directly, is also accepted as second parameter.
-
-[
-  {                       (json object)
-    "address": amount,    (numeric or string, required) A key-value pair. The key (string) is the bitcoin address, the value (float or string) is the amount in BTC
-  },
-  {                       (json object)
-    "data": "hex",        (string, required) A key-value pair. The key must be "data", the value is hex-encoded data
-  },
-  ...
-]
 
 ## Argument #3 - locktime
 
@@ -65,10 +48,6 @@ Allows this transaction to be replaced by a transaction with higher fees. If pro
 
 ## Examples
 
-bitcoin-cli createrawtransaction "[{\"txid\":\"myid\",\"vout\":0}]" "[{\"address\":0.01}]"
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "[{\"data\":\"00010203\"}]"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-bitcoin-cli createrawtransaction "[{\"txid\":\"myid\",\"vout\":0}]" "[{\"data\":\"00010203\"}]"
-
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "[{\"address\":0.01}]"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "[{\"data\":\"00010203\"}]"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`

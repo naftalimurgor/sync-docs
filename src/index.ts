@@ -26,10 +26,10 @@ async function parseToMarkdown(links: Array<Link>) {
     const $ = cheerio.load(pageData.data);
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    $('pre').replaceWith(function () {
-      // eslint-disable-next-line functional/no-this-expression
-      return $('code').html($(this));
-    });
+    // $('pre').replaceWith(function () {
+    //   // eslint-disable-next-line functional/no-this-expression
+    //   return $('code').html($(this));
+    // });
     const pageContent = $('div.section').html();
     const frontMatter = `
     ---

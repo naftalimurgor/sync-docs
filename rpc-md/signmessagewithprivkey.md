@@ -1,6 +1,8 @@
-# signmessagewithprivkey
 
-`signmessagewithprivkey "privkey" "message"`
+    ---
+    sidebar_position: 77
+    ---
+    # signmessagewithprivkey
 
 Sign a message with the private key of an address
 
@@ -26,12 +28,10 @@ The message to create a signature of.
 
 Create the signature:
 
-bitcoin-cli signmessagewithprivkey "privkey" "my message"
-
 Verify the signature:
-
-bitcoin-cli verifymessage "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "signature" "my message"
 
 As a JSON-RPC call:
 
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "signmessagewithprivkey", "params": ["privkey", "my message"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "signmessagewithprivkey", "params": ["privkey", "my message"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+
+`

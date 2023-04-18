@@ -1,6 +1,8 @@
-# deriveaddresses
 
-`deriveaddresses "descriptor" ( range )`
+    ---
+    sidebar_position: 73
+    ---
+    # deriveaddresses
 
 Derives one or more addresses corresponding to an output descriptor.
 
@@ -26,13 +28,10 @@ If a ranged descriptor is used, this specifies the end or the range (in \[begin,
 
 ## Result
 
-[           (json array)
-  "str",    (string) the derived addresses
-  ...
-]
-
 ## Examples
 
 First three native segwit receive addresses:
 
-bitcoin-cli deriveaddresses "wpkh([d34db33f/84h/0h/0h]xpub6DJ2dNUysrn5Vt36jH2KLBT2i1auw1tTSSomg8PhqNiUtx8QX2SvC9nrHu81fT41fvDUnhMjEzQgXnQjKEu3oaqMSzhSrHMxyyoEAmUHQbY/0/*)#cjjspncu" "[0,2]"
+`bitcoin-cli deriveaddresses "wpkh([d34db33f/84h/0h/0h]xpub6DJ2dNUysrn5Vt36jH2KLBT2i1auw1tTSSomg8PhqNiUtx8QX2SvC9nrHu81fT41fvDUnhMjEzQgXnQjKEu3oaqMSzhSrHMxyyoEAmUHQbY/0/*)#cjjspncu" "[0,2]"
+
+`

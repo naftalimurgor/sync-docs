@@ -1,6 +1,8 @@
-# disconnectnode
 
-`disconnectnode ( "address" nodeid )`
+    ---
+    sidebar_position: 44
+    ---
+    # disconnectnode
 
 Immediately disconnects from the specified peer node.
 
@@ -22,14 +24,8 @@ The node ID (see getpeerinfo for node IDs)
 
 ## Result
 
-null    (json null)
-
 ## Examples
 
-bitcoin-cli disconnectnode "192.168.0.6:8333"
+`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "disconnectnode", "params": ["", 1]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-bitcoin-cli disconnectnode "" 1
-
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "disconnectnode", "params": ["192.168.0.6:8333"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-
-curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "disconnectnode", "params": ["", 1]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+`
