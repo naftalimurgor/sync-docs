@@ -1,8 +1,9 @@
+---
+sidebar_position: 7
+---
+# getblockhash
 
-    ---
-    sidebar_position: 7
-    ---
-    # getblockhash
+`getblockhash height`
 
 Returns hash of block in best-block-chain at height provided.
 
@@ -20,6 +21,6 @@ The height index
 
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getblockhash", "params": [1000]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli getblockhash 1000
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getblockhash", "params": [1000]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

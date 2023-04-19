@@ -1,8 +1,9 @@
+---
+sidebar_position: 22
+---
+# pruneblockchain
 
-    ---
-    sidebar_position: 22
-    ---
-    # pruneblockchain
+`pruneblockchain height`
 
 ## Argument #1 - height
 
@@ -20,6 +21,6 @@ to prune blocks whose block time is at least 2 hours older than the provided tim
 
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "pruneblockchain", "params": [1000]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli pruneblockchain 1000
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "pruneblockchain", "params": [1000]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

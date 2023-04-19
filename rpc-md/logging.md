@@ -1,8 +1,9 @@
+---
+sidebar_position: 30
+---
+# logging
 
-    ---
-    sidebar_position: 30
-    ---
-    # logging
+`logging ( ["include_category",...] ["exclude_category",...] )`
 
 Gets and sets the logging configuration.
 
@@ -25,16 +26,31 @@ The valid logging categories are: net, tor, mempool, http, bench, zmq, walletdb,
 
 The categories to add to debug logging
 
+[
+  "include_category",    (string) the valid logging category
+  ...
+]
+
 ## Argument #2 - exclude
 
 **Type:** json array, optional
 
 The categories to remove from debug logging
 
+[
+  "exclude_category",    (string) the valid logging category
+  ...
+]
+
 ## Result
+
+{                             (json object) keys are the logging categories, and values indicates its status
+  "category" : true|false,    (boolean) if being debug logged or not. false:inactive, true:active
+  ...
+}
 
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "logging", "params": [["all"], ["libevent"]]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli logging "[\"all\"]" "[\"http\"]"
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "logging", "params": [["all"], ["libevent"]]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

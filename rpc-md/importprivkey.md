@@ -1,8 +1,9 @@
+---
+sidebar_position: 103
+---
+# importprivkey
 
-    ---
-    sidebar_position: 103
-    ---
-    # importprivkey
+`importprivkey "privkey" ( "label" rescan )`
 
 Adds a private key (as returned by dumpprivkey) to your wallet. Requires a new wallet backup.
 
@@ -32,18 +33,26 @@ Rescan the wallet for transactions
 
 ## Result
 
+null    (json null)
+
 ## Examples
 
 Dump a private key:
 
+bitcoin-cli dumpprivkey "myaddress"
+
 Import the private key with rescan:
+
+bitcoin-cli importprivkey "mykey"
 
 Import using a label and without rescan:
 
+bitcoin-cli importprivkey "mykey" "testing" false
+
 Import using default blank label and without rescan:
+
+bitcoin-cli importprivkey "mykey" "" false
 
 As a JSON-RPC call:
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "importprivkey", "params": ["mykey", "testing", false]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "importprivkey", "params": ["mykey", "testing", false]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

@@ -1,8 +1,9 @@
+---
+sidebar_position: 42
+---
+# addnode
 
-    ---
-    sidebar_position: 42
-    ---
-    # addnode
+`addnode "node" "command"`
 
 Attempts to add or remove a node from the addnode list.
 
@@ -24,8 +25,10 @@ The node (see getpeerinfo for nodes)
 
 ## Result
 
+null    (json null)
+
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "addnode", "params": ["192.168.0.6:8333", "onetry"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli addnode "192.168.0.6:8333" "onetry"
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "addnode", "params": ["192.168.0.6:8333", "onetry"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

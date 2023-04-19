@@ -1,8 +1,9 @@
+---
+sidebar_position: 118
+---
+# loadwallet
 
-    ---
-    sidebar_position: 118
-    ---
-    # loadwallet
+`loadwallet "filename" ( load_on_startup )`
 
 Loads a wallet from a wallet file or directory.
 
@@ -22,8 +23,13 @@ Save wallet name to persistent settings and load on startup. True to add wallet 
 
 ## Result
 
+{                       (json object)
+  "name" : "str",       (string) The wallet name if loaded successfully.
+  "warning" : "str"     (string) Warning message if wallet was not loaded cleanly.
+}
+
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "loadwallet", "params": ["test.dat"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli loadwallet "test.dat"
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "loadwallet", "params": ["test.dat"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

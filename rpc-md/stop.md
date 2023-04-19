@@ -1,8 +1,7 @@
-
-    ---
-    sidebar_position: 31
-    ---
-    # stop
+---
+sidebar_position: 31
+---
+# stop
 
 `stop`
 

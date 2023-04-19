@@ -1,8 +1,9 @@
+---
+sidebar_position: 21
+---
+# preciousblock
 
-    ---
-    sidebar_position: 21
-    ---
-    # preciousblock
+`preciousblock "blockhash"`
 
 Treats a block as if it were received before others with the same work.
 
@@ -18,8 +19,10 @@ the hash of the block to mark as precious
 
 ## Result
 
+null    (json null)
+
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "preciousblock", "params": ["blockhash"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli preciousblock "blockhash"
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "preciousblock", "params": ["blockhash"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

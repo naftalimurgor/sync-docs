@@ -1,8 +1,9 @@
+---
+sidebar_position: 69
+---
+# signrawtransactionwithkey
 
-    ---
-    sidebar_position: 69
-    ---
-    # signrawtransactionwithkey
+`signrawtransactionwithkey "hexstring" ["privatekey",...] ( [{"txid":"hex","vout":n,"scriptPubKey":"hex","redeemScript":"hex","witnessScript":"hex","amount":amount},...] "sighashtype" )`
 
 Sign inputs for raw transaction (serialized, hex-encoded).
 
@@ -22,11 +23,28 @@ The transaction hex string
 
 The base58-encoded private keys for signing
 
+[
+  "privatekey",                (string) private key in base58-encoding
+  ...
+]
+
 ## Argument #3 - prevtxs
 
 **Type:** json array, optional
 
 The previous dependent transaction outputs
+
+[
+  {                            (json object)
+    "txid": "hex",             (string, required) The transaction id
+    "vout": n,                 (numeric, required) The output number
+    "scriptPubKey": "hex",     (string, required) script key
+    "redeemScript": "hex",     (string) (required for P2SH) redeem script
+    "witnessScript": "hex",    (string) (required for P2WSH or P2SH-P2WSH) witness script
+    "amount": amount,          (numeric or string) (required for Segwit inputs) the amount spent
+  },
+  ...
+]
 
 ## Argument #4 - sighashtype
 
@@ -38,8 +56,23 @@ The signature hash type. Must be one of:
 
 ## Result
 
+{                             (json object)
+  "hex" : "hex",              (string) The hex-encoded raw transaction with signature(s)
+  "complete" : true|false,    (boolean) If the transaction has a complete set of signatures
+  "errors" : [                (json array, optional) Script verification errors (if there are any)
+    {                         (json object)
+      "txid" : "hex",         (string) The hash of the referenced, previous transaction
+      "vout" : n,             (numeric) The index of the output to spent and used as input
+      "scriptSig" : "hex",    (string) The hex-encoded signature script
+      "sequence" : n,         (numeric) Script sequence number
+      "error" : "str"         (string) Verification or signing error related to the input
+    },
+    ...
+  ]
+}
+
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "signrawtransactionwithkey", "params": ["myhex", "[\"key1\",\"key2\"]"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli signrawtransactionwithkey "myhex" "[\"key1\",\"key2\"]"
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "signrawtransactionwithkey", "params": ["myhex", "[\"key1\",\"key2\"]"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

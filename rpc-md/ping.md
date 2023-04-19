@@ -1,8 +1,9 @@
+---
+sidebar_position: 52
+---
+# ping
 
-    ---
-    sidebar_position: 52
-    ---
-    # ping
+`ping`
 
 Requests that a ping be sent to all other nodes, to measure ping time.
 
@@ -12,8 +13,10 @@ Ping command is handled in queue with all other commands, so it measures process
 
 ## Result
 
+null    (json null)
+
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "ping", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli ping
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "ping", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

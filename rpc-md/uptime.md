@@ -1,8 +1,9 @@
+---
+sidebar_position: 32
+---
+# uptime
 
-    ---
-    sidebar_position: 32
-    ---
-    # uptime
+`uptime`
 
 Returns the total uptime of the server.
 
@@ -14,6 +15,6 @@ Returns the total uptime of the server.
 
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "uptime", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli uptime
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "uptime", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

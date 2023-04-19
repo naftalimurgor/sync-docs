@@ -1,8 +1,9 @@
+---
+sidebar_position: 107
+---
+# keypoolrefill
 
-    ---
-    sidebar_position: 107
-    ---
-    # keypoolrefill
+`keypoolrefill ( newsize )`
 
 Fills the keypool.
 
@@ -16,8 +17,10 @@ The new keypool size
 
 ## Result
 
+null    (json null)
+
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "keypoolrefill", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli keypoolrefill
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "keypoolrefill", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

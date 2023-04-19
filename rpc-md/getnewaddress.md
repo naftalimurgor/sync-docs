@@ -1,8 +1,9 @@
+---
+sidebar_position: 93
+---
+# getnewaddress
 
-    ---
-    sidebar_position: 93
-    ---
-    # getnewaddress
+`getnewaddress ( "label" "address_type" )`
 
 Returns a new Bitcoin address for receiving payments.
 
@@ -28,6 +29,6 @@ The address type to use. Options are “legacy”, “p2sh-segwit”, and “bec
 
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getnewaddress", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli getnewaddress
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getnewaddress", "params": []}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

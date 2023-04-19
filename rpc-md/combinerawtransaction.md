@@ -1,8 +1,9 @@
+---
+sidebar_position: 57
+---
+# combinerawtransaction
 
-    ---
-    sidebar_position: 57
-    ---
-    # combinerawtransaction
+`combinerawtransaction ["hexstring",...]`
 
 Combine multiple partially signed transactions into one transaction.
 
@@ -14,6 +15,11 @@ The combined transaction may be another partially signed transaction or a fully 
 
 The hex strings of partially signed transactions
 
+[
+  "hexstring",    (string) A hex-encoded raw transaction
+  ...
+]
+
 ## Result
 
 | Name | Type   | Description                                       |
@@ -22,6 +28,4 @@ The hex strings of partially signed transactions
 
 ## Examples
 
-`bitcoin-cli combinerawtransaction '["myhex1", "myhex2", "myhex3"]'
-
-`
+bitcoin-cli combinerawtransaction '["myhex1", "myhex2", "myhex3"]'

@@ -1,8 +1,9 @@
+---
+sidebar_position: 74
+---
+# estimatesmartfee
 
-    ---
-    sidebar_position: 74
-    ---
-    # estimatesmartfee
+`estimatesmartfee conf_target ( "estimate_mode" )`
 
 Estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within conf\_target blocks if possible and return the number of blocks for which the estimate is valid. Uses virtual transaction size as defined in BIP 141 (witness data is discounted).
 
@@ -22,8 +23,19 @@ Whether to return a more conservative estimate which also satisfies a longer his
 
 ## Result
 
+{                   (json object)
+  "feerate" : n,    (numeric, optional) estimate fee rate in BTC/kB (only present if no errors were encountered)
+  "errors" : [      (json array, optional) Errors encountered during processing (if there are any)
+    "str",          (string) error
+    ...
+  ],
+  "blocks" : n      (numeric) block number where estimate was found
+                    The request target will be clamped between 2 and the highest target
+                    fee estimation is able to return based on how long it has been running.
+                    An error is returned if not enough transactions and blocks
+                    have been observed to make an estimate for any number of blocks.
+}
+
 ## Examples
 
-`bitcoin-cli estimatesmartfee 6
-
-`
+bitcoin-cli estimatesmartfee 6

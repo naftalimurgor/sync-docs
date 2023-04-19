@@ -1,8 +1,9 @@
+---
+sidebar_position: 126
+---
+# sethdseed
 
-    ---
-    sidebar_position: 126
-    ---
-    # sethdseed
+`sethdseed ( newkeypool "seed" )`
 
 Set or generate a new HD wallet seed. Non-HD wallets will not be upgraded to being a HD wallet. Wallets that are already HD will have a new HD seed set so that new keys added to the keypool will be derived from this new seed.
 
@@ -28,8 +29,14 @@ The seed value can be retrieved using the dumpwallet command. It is the private 
 
 ## Result
 
+null    (json null)
+
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "sethdseed", "params": [true, "wifkey"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli sethdseed
 
-`
+bitcoin-cli sethdseed false
+
+bitcoin-cli sethdseed true "wifkey"
+
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "sethdseed", "params": [true, "wifkey"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

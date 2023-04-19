@@ -1,8 +1,9 @@
+---
+sidebar_position: 132
+---
+# unloadwallet
 
-    ---
-    sidebar_position: 132
-    ---
-    # unloadwallet
+`unloadwallet ( "wallet_name" load_on_startup )`
 
 Unloads the wallet referenced by the request endpoint otherwise unloads the wallet specified in the argument.
 
@@ -22,8 +23,12 @@ Save wallet name to persistent settings and load on startup. True to add wallet 
 
 ## Result
 
+{                       (json object)
+  "warning" : "str"     (string) Warning message if wallet was not unloaded cleanly.
+}
+
 ## Examples
 
-`curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "unloadwallet", "params": [wallet_name]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+bitcoin-cli unloadwallet wallet_name
 
-`
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "unloadwallet", "params": [wallet_name]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

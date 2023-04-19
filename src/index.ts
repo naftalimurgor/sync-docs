@@ -11,33 +11,26 @@ type Link = {
   name: string;
 };
 
-const main = async () => {
-  const childLinks = await fetchLinks();
-  await parseToMarkdown(childLinks);
-};
-
 async function parseToMarkdown(links: Array<Link>) {
   const mdc = new NodeHtmlMarkdown({
     codeBlockStyle: 'indented',
     ignore: ['a'],
   });
+
   links.forEach(async (link: Link, index: number) => {
     const pageData = await axios.get(link.href);
     const $ = cheerio.load(pageData.data);
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    // $('pre').replaceWith(function () {
-    //   // eslint-disable-next-line functional/no-this-expression
-    //   return $('code').html($(this));
-    // });
+
     const pageContent = $('div.section').html();
     const frontMatter = `
-    ---
-    sidebar_position: ${index + 2}
-    ---
-    `;
-    const mdContent = frontMatter + mdc.translate(pageContent as string);
-    await writeToFs(mdContent, link.name);
+---
+sidebar_position: ${index + 2}
+---
+`;
+    const mdContent = ` ${frontMatter.trimStart()}${mdc.translate(
+      pageContent as string
+    )}`;
+    await writeToFs(mdContent.trimStart(), link.name);
   });
 }
 
@@ -67,6 +60,11 @@ async function fetchLinks() {
 
   return links;
 }
+
+const main = async () => {
+  const childLinks = await fetchLinks();
+  await parseToMarkdown(childLinks);
+};
 
 main().catch((err) => {
   console.log(err);

@@ -1,8 +1,9 @@
+---
+sidebar_position: 125
+---
+# sendtoaddress
 
-    ---
-    sidebar_position: 125
-    ---
-    # sendtoaddress
+`sendtoaddress "address" amount ( "comment" "comment_to" subtractfeefromamount replaceable conf_target "estimate_mode" avoid_reuse fee_rate verbose )`
 
 Send an amount to a given address.
 
@@ -80,18 +81,31 @@ dirty if they have previously been used in a transaction.
 
 ## Result (if verbose is set to true)
 
+{                          (json object)
+  "txid" : "hex",          (string) The transaction id.
+  "fee reason" : "str"     (string) The transaction fee reason.
+}
+
 ## Examples
 
 Send 0.1 BTC:
 
+bitcoin-cli sendtoaddress "bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" 0.1
+
 Send 0.1 BTC with a confirmation target of 6 blocks in economical fee estimate mode using positional arguments:
+
+bitcoin-cli sendtoaddress "bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" 0.1 "donation" "sean's outpost" false true 6 economical
 
 Send 0.1 BTC with a fee rate of 1.1 sat/vB, subtract fee from amount, BIP125-replaceable, using positional arguments:
 
+bitcoin-cli sendtoaddress "bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" 0.1 "drinks" "room77" true true null "unset" null 1.1
+
 Send 0.2 BTC with a confirmation target of 6 blocks in economical fee estimate mode using named arguments:
+
+bitcoin-cli -named sendtoaddress address="bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" amount=0.2 conf_target=6 estimate_mode="economical"
 
 Send 0.5 BTC with a fee rate of 25 sat/vB using named arguments:
 
-`bitcoin-cli -named sendtoaddress address="bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" amount=0.5 fee_rate=25 subtractfeefromamount=false replaceable=true avoid_reuse=true comment="2 pizzas" comment_to="jeremy" verbose=true
+bitcoin-cli -named sendtoaddress address="bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" amount=0.5 fee_rate=25
 
-`
+bitcoin-cli -named sendtoaddress address="bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl" amount=0.5 fee_rate=25 subtractfeefromamount=false replaceable=true avoid_reuse=true comment="2 pizzas" comment_to="jeremy" verbose=true
