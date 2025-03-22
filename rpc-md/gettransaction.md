@@ -1,6 +1,3 @@
----
-sidebar_position: 97
----
 # gettransaction
 
 `gettransaction "txid" ( include_watchonly verbose )`

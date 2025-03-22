@@ -1,6 +1,3 @@
----
-sidebar_position: 30
----
 # logging
 
 `logging ( ["include_category",...] ["exclude_category",...] )`

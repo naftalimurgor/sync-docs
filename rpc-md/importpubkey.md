@@ -1,6 +1,3 @@
----
-sidebar_position: 105
----
 # importpubkey
 
 `importpubkey "pubkey" ( "label" rescan )`

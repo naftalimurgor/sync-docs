@@ -1,6 +1,3 @@
----
-sidebar_position: 24
----
 # scantxoutset
 
 `scantxoutset "action" ( [scanobjects,...] )`

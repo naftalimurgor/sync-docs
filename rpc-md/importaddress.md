@@ -1,6 +1,3 @@
----
-sidebar_position: 100
----
 # importaddress
 
 `importaddress "address" ( "label" rescan p2sh )`

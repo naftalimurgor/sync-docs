@@ -1,6 +1,3 @@
----
-sidebar_position: 60
----
 # createrawtransaction
 
 `createrawtransaction [{"txid":"hex","vout":n,"sequence":n},...] [{"address":amount},{"data":"hex"},...] ( locktime replaceable )`

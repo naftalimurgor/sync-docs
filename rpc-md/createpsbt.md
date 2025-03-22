@@ -1,6 +1,3 @@
----
-sidebar_position: 59
----
 # createpsbt
 
 `createpsbt [{"txid":"hex","vout":n,"sequence":n},...] [{"address":amount},{"data":"hex"},...] ( locktime replaceable )`

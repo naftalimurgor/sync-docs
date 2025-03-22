@@ -1,6 +1,3 @@
----
-sidebar_position: 134
----
 # walletcreatefundedpsbt
 
 `walletcreatefundedpsbt ( [{"txid":"hex","vout":n,"sequence":n},...] ) [{"address":amount},{"data":"hex"},...] ( locktime options bip32derivs )`

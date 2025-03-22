@@ -1,6 +1,3 @@
----
-sidebar_position: 95
----
 # getreceivedbyaddress
 
 `getreceivedbyaddress "address" ( minconf )`

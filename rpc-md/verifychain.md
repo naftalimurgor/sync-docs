@@ -1,6 +1,3 @@
----
-sidebar_position: 25
----
 # verifychain
 
 `verifychain ( checklevel nblocks )`

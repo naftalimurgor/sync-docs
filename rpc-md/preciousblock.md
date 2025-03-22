@@ -1,6 +1,3 @@
----
-sidebar_position: 21
----
 # preciousblock
 
 `preciousblock "blockhash"`

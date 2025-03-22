@@ -1,6 +1,3 @@
----
-sidebar_position: 64
----
 # finalizepsbt
 
 `finalizepsbt "psbt" ( extract )`

@@ -1,6 +1,3 @@
----
-sidebar_position: 124
----
 # sendmany
 
 `sendmany "" {"address":amount} ( minconf "comment" ["address",...] replaceable conf_target "estimate_mode" fee_rate verbose )`

@@ -1,6 +1,3 @@
----
-sidebar_position: 18
----
 # gettxout
 
 `gettxout "txid" n ( include_mempool )`

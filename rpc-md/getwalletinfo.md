@@ -1,6 +1,3 @@
----
-sidebar_position: 99
----
 # getwalletinfo
 
 `getwalletinfo`

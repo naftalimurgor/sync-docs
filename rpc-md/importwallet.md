@@ -1,6 +1,3 @@
----
-sidebar_position: 106
----
 # importwallet
 
 `importwallet "filename"`

@@ -1,6 +1,3 @@
----
-sidebar_position: 92
----
 # getbalances
 
 `getbalances`

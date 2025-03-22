@@ -1,6 +1,3 @@
----
-sidebar_position: 104
----
 # importprunedfunds
 
 `importprunedfunds "rawtransaction" "txoutproof"`

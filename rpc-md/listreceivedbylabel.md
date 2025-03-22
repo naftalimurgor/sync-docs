@@ -1,6 +1,3 @@
----
-sidebar_position: 112
----
 # listreceivedbylabel
 
 `listreceivedbylabel ( minconf include_empty include_watchonly )`

@@ -1,6 +1,3 @@
----
-sidebar_position: 83
----
 # backupwallet
 
 `backupwallet "destination"`

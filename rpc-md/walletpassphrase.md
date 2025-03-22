@@ -1,6 +1,3 @@
----
-sidebar_position: 136
----
 # walletpassphrase
 
 `walletpassphrase "passphrase" timeout`

@@ -1,6 +1,3 @@
----
-sidebar_position: 137
----
 # walletpassphrasechange
 
 `walletpassphrasechange "oldpassphrase" "newpassphrase"`

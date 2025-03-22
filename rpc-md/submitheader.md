@@ -1,6 +1,3 @@
----
-sidebar_position: 41
----
 # submitheader
 
 `submitheader "hexdata"`

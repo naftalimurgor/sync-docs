@@ -1,6 +1,3 @@
----
-sidebar_position: 49
----
 # getnodeaddresses
 
 `getnodeaddresses ( count )`

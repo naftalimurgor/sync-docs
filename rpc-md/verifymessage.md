@@ -1,6 +1,3 @@
----
-sidebar_position: 79
----
 # verifymessage
 
 `verifymessage "address" "signature" "message"`

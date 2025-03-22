@@ -1,6 +1,3 @@
----
-sidebar_position: 87
----
 # dumpwallet
 
 `dumpwallet "filename"`

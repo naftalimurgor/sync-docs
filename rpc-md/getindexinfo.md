@@ -1,6 +1,3 @@
----
-sidebar_position: 76
----
 # getindexinfo
 
 `getindexinfo ( "index_name" )`

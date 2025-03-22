@@ -1,6 +1,3 @@
----
-sidebar_position: 74
----
 # estimatesmartfee
 
 `estimatesmartfee conf_target ( "estimate_mode" )`

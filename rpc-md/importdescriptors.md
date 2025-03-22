@@ -1,6 +1,3 @@
----
-sidebar_position: 101
----
 # importdescriptors
 
 `importdescriptors "requests"`

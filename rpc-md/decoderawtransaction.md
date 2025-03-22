@@ -1,6 +1,3 @@
----
-sidebar_position: 62
----
 # decoderawtransaction
 
 `decoderawtransaction "hexstring" ( iswitness )`

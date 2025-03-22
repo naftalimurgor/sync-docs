@@ -1,6 +1,3 @@
----
-sidebar_position: 20
----
 # gettxoutsetinfo
 
 `gettxoutsetinfo ( "hash_type" )`

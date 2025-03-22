@@ -1,6 +1,3 @@
----
-sidebar_position: 131
----
 # signrawtransactionwithwallet
 
 `signrawtransactionwithwallet "hexstring" ( [{"txid":"hex","vout":n,"scriptPubKey":"hex","redeemScript":"hex","witnessScript":"hex","amount":amount},...] "sighashtype" )`

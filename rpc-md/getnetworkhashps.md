@@ -1,6 +1,3 @@
----
-sidebar_position: 38
----
 # getnetworkhashps
 
 `getnetworkhashps ( nblocks height )`

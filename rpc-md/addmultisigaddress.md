@@ -1,6 +1,3 @@
----
-sidebar_position: 82
----
 # addmultisigaddress
 
 `addmultisigaddress nrequired ["key",...] ( "label" "address_type" )`

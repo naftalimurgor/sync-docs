@@ -1,6 +1,3 @@
----
-sidebar_position: 89
----
 # getaddressesbylabel
 
 `getaddressesbylabel "label"`

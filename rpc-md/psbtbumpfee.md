@@ -1,6 +1,3 @@
----
-sidebar_position: 120
----
 # psbtbumpfee
 
 `psbtbumpfee "txid" ( options )`

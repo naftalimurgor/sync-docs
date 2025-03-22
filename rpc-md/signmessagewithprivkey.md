@@ -1,6 +1,3 @@
----
-sidebar_position: 77
----
 # signmessagewithprivkey
 
 `signmessagewithprivkey "privkey" "message"`

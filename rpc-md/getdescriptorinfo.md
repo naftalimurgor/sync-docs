@@ -1,6 +1,3 @@
----
-sidebar_position: 75
----
 # getdescriptorinfo
 
 `getdescriptorinfo "descriptor"`

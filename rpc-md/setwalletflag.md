@@ -1,6 +1,3 @@
----
-sidebar_position: 129
----
 # setwalletflag
 
 `setwalletflag "flag" ( value )`

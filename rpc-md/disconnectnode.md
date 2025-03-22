@@ -1,6 +1,3 @@
----
-sidebar_position: 44
----
 # disconnectnode
 
 `disconnectnode ( "address" nodeid )`

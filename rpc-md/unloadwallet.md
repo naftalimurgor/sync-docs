@@ -1,6 +1,3 @@
----
-sidebar_position: 132
----
 # unloadwallet
 
 `unloadwallet ( "wallet_name" load_on_startup )`

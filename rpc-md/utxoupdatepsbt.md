@@ -1,6 +1,3 @@
----
-sidebar_position: 71
----
 # utxoupdatepsbt
 
 `utxoupdatepsbt "psbt" ( ["",{"desc":"str","range":n or [n,n]},...] )`

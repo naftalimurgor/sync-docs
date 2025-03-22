@@ -1,6 +1,3 @@
----
-sidebar_position: 109
----
 # listlabels
 
 `listlabels ( "purpose" )`

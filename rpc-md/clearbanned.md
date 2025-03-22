@@ -1,6 +1,3 @@
----
-sidebar_position: 43
----
 # clearbanned
 
 `clearbanned`

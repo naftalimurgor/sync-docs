@@ -1,6 +1,3 @@
----
-sidebar_position: 94
----
 # getrawchangeaddress
 
 `getrawchangeaddress ( "address_type" )`

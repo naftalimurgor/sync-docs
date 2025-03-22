@@ -1,6 +1,3 @@
----
-sidebar_position: 90
----
 # getaddressinfo
 
 `getaddressinfo "address"`

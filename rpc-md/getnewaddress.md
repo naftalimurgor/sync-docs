@@ -1,6 +1,3 @@
----
-sidebar_position: 93
----
 # getnewaddress
 
 `getnewaddress ( "label" "address_type" )`

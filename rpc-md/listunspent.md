@@ -1,6 +1,3 @@
----
-sidebar_position: 115
----
 # listunspent
 
 `listunspent ( minconf maxconf ["address",...] include_unsafe query_options )`

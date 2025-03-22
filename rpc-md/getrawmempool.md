@@ -1,6 +1,3 @@
----
-sidebar_position: 17
----
 # getrawmempool
 
 `getrawmempool ( verbose mempool_sequence )`

@@ -1,6 +1,3 @@
----
-sidebar_position: 57
----
 # combinerawtransaction
 
 `combinerawtransaction ["hexstring",...]`

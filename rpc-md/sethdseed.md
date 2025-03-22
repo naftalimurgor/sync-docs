@@ -1,6 +1,3 @@
----
-sidebar_position: 126
----
 # sethdseed
 
 `sethdseed ( newkeypool "seed" )`

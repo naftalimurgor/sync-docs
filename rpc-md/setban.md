@@ -1,6 +1,3 @@
----
-sidebar_position: 53
----
 # setban
 
 `setban "subnet" "command" ( bantime absolute )`

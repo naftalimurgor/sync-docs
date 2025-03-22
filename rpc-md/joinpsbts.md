@@ -1,6 +1,3 @@
----
-sidebar_position: 67
----
 # joinpsbts
 
 `joinpsbts ["psbt",...]`

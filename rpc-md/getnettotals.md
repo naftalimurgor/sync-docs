@@ -1,6 +1,3 @@
----
-sidebar_position: 47
----
 # getnettotals
 
 `getnettotals`

@@ -1,6 +1,3 @@
----
-sidebar_position: 122
----
 # rescanblockchain
 
 `rescanblockchain ( start_height stop_height )`

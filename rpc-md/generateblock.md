@@ -1,6 +1,3 @@
----
-sidebar_position: 33
----
 # generateblock
 
 `generateblock "output" ["rawtx/txid",...]`

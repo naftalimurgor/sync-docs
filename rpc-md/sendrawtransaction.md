@@ -1,6 +1,3 @@
----
-sidebar_position: 68
----
 # sendrawtransaction
 
 `sendrawtransaction "hexstring" ( maxfeerate )`

@@ -1,6 +1,3 @@
----
-sidebar_position: 34
----
 # generatetoaddress
 
 `generatetoaddress nblocks "address" ( maxtries )`

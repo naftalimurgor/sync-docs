@@ -1,6 +1,3 @@
----
-sidebar_position: 72
----
 # createmultisig
 
 `createmultisig nrequired ["key",...] ( "address_type" )`

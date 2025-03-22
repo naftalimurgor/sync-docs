@@ -1,6 +1,3 @@
----
-sidebar_position: 36
----
 # getblocktemplate
 
 `getblocktemplate ( "template_request" )`

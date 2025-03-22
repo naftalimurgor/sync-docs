@@ -1,6 +1,3 @@
----
-sidebar_position: 19
----
 # gettxoutproof
 
 `gettxoutproof ["txid",...] ( "blockhash" )`

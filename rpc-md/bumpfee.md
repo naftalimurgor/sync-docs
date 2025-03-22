@@ -1,7 +1,3 @@
----
-sidebar_position: 84
----
-
 # bumpfee
 
 `bumpfee "txid" ( options )`
@@ -26,7 +22,7 @@ Alternatively, the user can specify a fee rate in sat/vB for the new transaction
 
 At a minimum, the new fee rate must be high enough to pay an additional new relay fee (incrementalfee returned by getnetworkinfo) to enter the node’s mempool.
 
-\* WARNING: before version 0.21, fee_rate was in BTC/kvB. As of 0.21, fee_rate is in sat/vB. \*
+\* WARNING: before version 0.21, fee\_rate was in BTC/kvB. As of 0.21, fee\_rate is in sat/vB. \*
 
 ## Argument #1 - txid
 
@@ -38,7 +34,6 @@ The txid to be bumped
 
 **Type:** json object, optional
 
-```
 {
   "conf_target": n,          (numeric, optional, default=wallet -txconfirmtarget) Confirmation target in blocks
 
@@ -79,4 +74,3 @@ The txid to be bumped
 Bump the fee, get the new transaction’stxid:
 
 bitcoin-cli bumpfee <txid>
-```

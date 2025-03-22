@@ -1,6 +1,3 @@
----
-sidebar_position: 125
----
 # sendtoaddress
 
 `sendtoaddress "address" amount ( "comment" "comment_to" subtractfeefromamount replaceable conf_target "estimate_mode" avoid_reuse fee_rate verbose )`

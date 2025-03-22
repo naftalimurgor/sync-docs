@@ -1,6 +1,3 @@
----
-sidebar_position: 70
----
 # testmempoolaccept
 
 `testmempoolaccept ["rawtx",...] ( maxfeerate )`

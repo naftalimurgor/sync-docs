@@ -1,6 +1,3 @@
----
-sidebar_position: 63
----
 # decodescript
 
 `decodescript "hexstring"`

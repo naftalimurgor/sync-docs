@@ -1,6 +1,3 @@
----
-sidebar_position: 26
----
 # verifytxoutproof
 
 `verifytxoutproof "proof"`

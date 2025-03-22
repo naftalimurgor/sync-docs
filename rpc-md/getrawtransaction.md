@@ -1,6 +1,3 @@
----
-sidebar_position: 66
----
 # getrawtransaction
 
 `getrawtransaction "txid" ( verbose "blockhash" )`

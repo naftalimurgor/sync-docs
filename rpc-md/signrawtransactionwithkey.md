@@ -1,6 +1,3 @@
----
-sidebar_position: 69
----
 # signrawtransactionwithkey
 
 `signrawtransactionwithkey "hexstring" ["privatekey",...] ( [{"txid":"hex","vout":n,"scriptPubKey":"hex","redeemScript":"hex","witnessScript":"hex","amount":amount},...] "sighashtype" )`

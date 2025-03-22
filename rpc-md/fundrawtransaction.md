@@ -1,6 +1,3 @@
----
-sidebar_position: 65
----
 # fundrawtransaction
 
 `fundrawtransaction "hexstring" ( options iswitness )`

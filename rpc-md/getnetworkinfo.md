@@ -1,6 +1,3 @@
----
-sidebar_position: 48
----
 # getnetworkinfo
 
 `getnetworkinfo`

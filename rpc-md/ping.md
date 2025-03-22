@@ -1,6 +1,3 @@
----
-sidebar_position: 52
----
 # ping
 
 `ping`

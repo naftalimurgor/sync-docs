@@ -1,6 +1,3 @@
----
-sidebar_position: 111
----
 # listreceivedbyaddress
 
 `listreceivedbyaddress ( minconf include_empty include_watchonly "address_filter" )`

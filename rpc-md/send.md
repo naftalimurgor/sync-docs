@@ -1,6 +1,3 @@
----
-sidebar_position: 123
----
 # send
 
 `send [{"address":amount},{"data":"hex"},...] ( conf_target "estimate_mode" fee_rate options )`

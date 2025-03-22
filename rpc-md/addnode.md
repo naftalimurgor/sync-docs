@@ -1,6 +1,3 @@
----
-sidebar_position: 42
----
 # addnode
 
 `addnode "node" "command"`

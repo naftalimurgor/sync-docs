@@ -1,6 +1,3 @@
----
-sidebar_position: 88
----
 # encryptwallet
 
 `encryptwallet "passphrase"`

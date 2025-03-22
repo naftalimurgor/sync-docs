@@ -1,6 +1,3 @@
----
-sidebar_position: 118
----
 # loadwallet
 
 `loadwallet "filename" ( load_on_startup )`

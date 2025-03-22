@@ -1,6 +1,3 @@
----
-sidebar_position: 127
----
 # setlabel
 
 `setlabel "address" "label"`

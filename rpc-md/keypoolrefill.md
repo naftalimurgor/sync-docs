@@ -1,6 +1,3 @@
----
-sidebar_position: 107
----
 # keypoolrefill
 
 `keypoolrefill ( newsize )`

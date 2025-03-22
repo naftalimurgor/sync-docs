@@ -1,6 +1,3 @@
----
-sidebar_position: 103
----
 # importprivkey
 
 `importprivkey "privkey" ( "label" rescan )`

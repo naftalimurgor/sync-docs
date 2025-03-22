@@ -1,6 +1,3 @@
----
-sidebar_position: 13
----
 # getmempoolancestors
 
 `getmempoolancestors "txid" ( verbose )`

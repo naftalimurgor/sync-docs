@@ -1,6 +1,3 @@
----
-sidebar_position: 114
----
 # listtransactions
 
 `listtransactions ( "label" count skip include_watchonly )`

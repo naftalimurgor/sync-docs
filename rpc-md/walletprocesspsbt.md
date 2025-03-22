@@ -1,6 +1,3 @@
----
-sidebar_position: 138
----
 # walletprocesspsbt
 
 `walletprocesspsbt "psbt" ( sign "sighashtype" bip32derivs )`

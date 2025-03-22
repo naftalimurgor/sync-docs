@@ -1,6 +1,3 @@
----
-sidebar_position: 39
----
 # prioritisetransaction
 
 `prioritisetransaction "txid" ( dummy ) fee_delta`

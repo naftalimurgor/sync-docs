@@ -1,6 +1,3 @@
----
-sidebar_position: 91
----
 # getbalance
 
 `getbalance ( "dummy" minconf include_watchonly avoid_reuse )`
